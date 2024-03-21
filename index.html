@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe game</title>
+    <link rel="shortcut icon" href="Untitled.png" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- This is input filed that will  take player Name and  also display it in our game-->
+<div class="palyer">
+    <h1>Tic Tac Toe Game!</h1>
+   <label for="fname">Enter first Player Name:-</label>
+   <input type="text" id="fname" onfocus="this.value = ''"; placeholder="Enter the player1 Name">
+   <label for="sname">Enter Second Player Name:-</label>
+   <input type="text" id="sname" onfocus="this.value = ''"  placeholder="Enter the player2 Name">
+  <button id="btn1">Start Game</button>
+</div>
+ <!--This main game part that is use to play tic tac toe game-->
+<div class="game">
+    <h1>💞Welcome to Tic Tac Toe Game💞</h1>
+    <p id="winner"></p>
+    <div class="card">
+        <!--this is button it is 9 box of tic tac toe game-->
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+    </div>
+
+    <button id="newgame">New Game</button>
+    <p id="fplayerscore"></p>
+    <p id="splayerscore"></p>
+ 
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
