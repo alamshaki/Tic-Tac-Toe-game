@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+ padding: 0px;
+ margin:  0px;
+ box-sizing: border-box;
+ font-family:  "Poppins", sans-serif;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-image: url(image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+   justify-content: center;
+    background-color: #99baba;
+}
+
+/* palayer input filed css in which player will give self name */
+.palyer{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin-top: 100px;
+   
+}
+
+.palyer input{
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: none;
+}
+.palyer h1{
+    padding-bottom: 25px;
+    color: rgba(0, 0, 0, 0.862);
+}
+
+.palyer label{
+    font-size: 20px;
+}
+
+#btn1{
+    width: 120px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(64, 0, 255);
+   
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+}
+
+
+/*game part of tic tac toe game */
+
+.game{
+   display: none;
+   flex-direction: column;
+   margin-top: 80px;
+   align-items: center;
+
+   
+}
+
+.game h1{
+    color: black;
+    text-align: center;
+    font-size: 27px;
+}
+#winner{
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+}
+
+.card{
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 302px;
+    height: 210px;
+    gap: 7px;
+    margin-top: 20px;
+   
+}
+
+.box{
+    align-content: center;
+    width: 75px;
+    height: 64px;
+    text-align: center;
+    /* padding: 22px 13px 22px 13px; */
+    border-radius: 5px;
+    border: none;
+    background-image: url(wood1.avif);
+    color: rgb(0, 60, 255);
+    font-size: 30px;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px 4px black;
+}
+
+#newgame{
+    width: 150px;
+    margin-top: 20px;
+    background-color: rgb(0, 221, 255);
+   font-size: 16px;
+   border: none;
+   border-radius: 7px;
+    padding: 13px;
+}
+
+#fplayerscore, #splayerscore{
+    font-size: 20px;
+  
+}
+#fplayerscore{
+    margin-top: 10px;
+}
